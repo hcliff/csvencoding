@@ -16,6 +16,7 @@ func TestCSV(t *testing.T) {
 type csvgetter map[string]string
 
 func (l *csvgetter) SetCSV(b []string) error {
+	*l = map[string]string{"set": "csv"}
 	return nil
 }
 
